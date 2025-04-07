@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/colors.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
 
 class AppTheme {
   static const colors = AppColors();

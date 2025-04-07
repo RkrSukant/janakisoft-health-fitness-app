@@ -1,5 +1,5 @@
-name: sukant_flutter_boilerplate
-description: "Sukant's boilerplate for a new flutter project"
+name: janakisoft_health_fitness_app
+description: "Health and Fitness application for Jankisoft"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -54,6 +54,7 @@ dependencies:
   connectivity_plus: ^5.0.2
   intl: ^0.19.0
   pinput: ^5.0.0
+  lottie: ^2.7.0
 #  location: ^7.0.1
 
 dev_dependencies:

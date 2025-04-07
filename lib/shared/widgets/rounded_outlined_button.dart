@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/colors.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/dimens.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/text_styles.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/dimens.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/text_styles.dart';
 
 class RoundedOutlinedButton extends StatelessWidget {
   final String text;

@@ -1,5 +1,5 @@
 class Strings {
-  static const String appName = "Example";
+  static const String appName = "Health & Fitness";
   static const String appBy = "App by: Sukant Rajkarnikar";
 
   static const String noInternetError =

@@ -3,10 +3,10 @@ import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
-import 'package:sukant_flutter_boilerplate/shared/enums/toast_type.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/colors.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/dimens.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/text_styles.dart';
+import 'package:janakisoft_health_fitness_app/shared/enums/toast_type.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/dimens.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/text_styles.dart';
 
 Widget addVerticalSpace(double height) {
   return SizedBox(height: height);

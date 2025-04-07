@@ -1,15 +1,15 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
-import 'package:sukant_flutter_boilerplate/features/example/data/example_repository.dart';
-import 'package:sukant_flutter_boilerplate/features/example/data/example_repository_impl.dart';
-import 'package:sukant_flutter_boilerplate/features/example/data/local/example_local.dart';
-import 'package:sukant_flutter_boilerplate/features/example/data/local/example_local_impl.dart';
-import 'package:sukant_flutter_boilerplate/features/example/data/remote/example_remote.dart';
-import 'package:sukant_flutter_boilerplate/features/example/data/remote/example_remote_impl.dart';
-import 'package:sukant_flutter_boilerplate/routes/app_route.dart';
-import 'package:sukant_flutter_boilerplate/shared/network/rest/rest_service_impl.dart';
-import 'package:sukant_flutter_boilerplate/shared/storage/shared_preferences/shared_preferences_service.dart';
-import 'package:sukant_flutter_boilerplate/shared/storage/sqlite/db_manager.dart';
+import 'package:janakisoft_health_fitness_app/features/example/data/example_repository.dart';
+import 'package:janakisoft_health_fitness_app/features/example/data/example_repository_impl.dart';
+import 'package:janakisoft_health_fitness_app/features/example/data/local/example_local.dart';
+import 'package:janakisoft_health_fitness_app/features/example/data/local/example_local_impl.dart';
+import 'package:janakisoft_health_fitness_app/features/example/data/remote/example_remote.dart';
+import 'package:janakisoft_health_fitness_app/features/example/data/remote/example_remote_impl.dart';
+import 'package:janakisoft_health_fitness_app/routes/app_route.dart';
+import 'package:janakisoft_health_fitness_app/shared/network/rest/rest_service_impl.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/shared_preferences/shared_preferences_service.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/sqlite/db_manager.dart';
 
 final GetIt locator = GetIt.instance;
 

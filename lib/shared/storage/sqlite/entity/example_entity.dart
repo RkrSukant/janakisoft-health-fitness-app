@@ -1,5 +1,5 @@
 import 'package:floor/floor.dart';
-import 'package:sukant_flutter_boilerplate/shared/storage/sqlite/db_constants.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/sqlite/db_constants.dart';
 
 @Entity(tableName: DatabaseConstants.exampleTable)
 class ExampleEntity {

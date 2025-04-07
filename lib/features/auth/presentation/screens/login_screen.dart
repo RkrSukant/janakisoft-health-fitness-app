@@ -2,17 +2,17 @@ import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sukant_flutter_boilerplate/routes/app_route.gr.dart';
-import 'package:sukant_flutter_boilerplate/routes/route_util.dart';
-import 'package:sukant_flutter_boilerplate/routes/router_paths.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/colors.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/dimens.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/image_constants.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/strings.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/text_styles.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/utils.dart';
-import 'package:sukant_flutter_boilerplate/shared/widgets/rounded_filled_button.dart';
-import 'package:sukant_flutter_boilerplate/shared/widgets/text_field_widget.dart';
+import 'package:janakisoft_health_fitness_app/routes/app_route.gr.dart';
+import 'package:janakisoft_health_fitness_app/routes/route_util.dart';
+import 'package:janakisoft_health_fitness_app/routes/router_paths.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/dimens.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/image_constants.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/strings.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/text_styles.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/utils.dart';
+import 'package:janakisoft_health_fitness_app/shared/widgets/rounded_filled_button.dart';
+import 'package:janakisoft_health_fitness_app/shared/widgets/text_field_widget.dart';
 
 @RoutePage()
 class LoginScreen extends ConsumerStatefulWidget {

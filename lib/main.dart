@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sukant_flutter_boilerplate/di/service_locator.dart';
-import 'package:sukant_flutter_boilerplate/routes/app_route.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/app_theme.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/strings.dart';
+import 'package:janakisoft_health_fitness_app/di/service_locator.dart';
+import 'package:janakisoft_health_fitness_app/routes/app_route.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/app_theme.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/strings.dart';
 import 'di/service_locator.dart' as di;
 
 Future<void> main() async{

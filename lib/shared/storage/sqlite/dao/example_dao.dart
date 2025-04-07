@@ -1,5 +1,5 @@
 import 'package:floor/floor.dart';
-import 'package:sukant_flutter_boilerplate/shared/storage/sqlite/entity/example_entity.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/sqlite/entity/example_entity.dart';
 
 
 @dao

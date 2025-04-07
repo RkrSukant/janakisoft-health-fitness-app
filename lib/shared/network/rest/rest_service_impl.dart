@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:sukant_flutter_boilerplate/config/app_config.dart';
-import 'package:sukant_flutter_boilerplate/shared/exceptions/app_exception.dart';
-import 'package:sukant_flutter_boilerplate/shared/network/rest/rest_service.dart';
-import 'package:sukant_flutter_boilerplate/shared/exceptions/exception_handler_mixin.dart';
-import 'package:sukant_flutter_boilerplate/shared/models/either.dart';
-import 'package:sukant_flutter_boilerplate/shared/models/response.dart' as response;
+import 'package:janakisoft_health_fitness_app/config/app_config.dart';
+import 'package:janakisoft_health_fitness_app/shared/exceptions/app_exception.dart';
+import 'package:janakisoft_health_fitness_app/shared/network/rest/rest_service.dart';
+import 'package:janakisoft_health_fitness_app/shared/exceptions/exception_handler_mixin.dart';
+import 'package:janakisoft_health_fitness_app/shared/models/either.dart';
+import 'package:janakisoft_health_fitness_app/shared/models/response.dart' as response;
 
 class DioNetworkService extends RestNetworkService with ExceptionHandlerMixin{
   final Dio dio;

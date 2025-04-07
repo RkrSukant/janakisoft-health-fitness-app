@@ -9,15 +9,15 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i6;
-import 'package:sukant_flutter_boilerplate/features/auth/presentation/screens/forgot_password/forgot_password_screen.dart'
+import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/forgot_password/forgot_password_screen.dart'
     as _i2;
-import 'package:sukant_flutter_boilerplate/features/auth/presentation/screens/login_screen.dart'
+import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/login_screen.dart'
     as _i3;
-import 'package:sukant_flutter_boilerplate/features/auth/presentation/screens/register_screen.dart'
+import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/register_screen.dart'
     as _i4;
-import 'package:sukant_flutter_boilerplate/features/example/presentation/screens/example_screen.dart'
+import 'package:janakisoft_health_fitness_app/features/example/presentation/screens/example_screen.dart'
     as _i1;
-import 'package:sukant_flutter_boilerplate/features/landing/presentation/screens/splash_screen.dart'
+import 'package:janakisoft_health_fitness_app/features/landing/presentation/screens/splash_screen.dart'
     as _i5;
 
 abstract class $AppRouter extends _i6.RootStackRouter {

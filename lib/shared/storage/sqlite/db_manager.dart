@@ -1,7 +1,7 @@
 
 
-import 'package:sukant_flutter_boilerplate/shared/storage/sqlite/app_database.dart';
-import 'package:sukant_flutter_boilerplate/shared/storage/sqlite/dao/example_dao.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/sqlite/app_database.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/sqlite/dao/example_dao.dart';
 
 class DatabaseManager{
   static DatabaseManager? _databaseManager;

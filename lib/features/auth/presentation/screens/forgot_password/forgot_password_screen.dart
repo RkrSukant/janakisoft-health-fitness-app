@@ -1,16 +1,16 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sukant_flutter_boilerplate/features/auth/presentation/widgets/forgot_password_progress_indicator.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/colors.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/dimens.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/strings.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/text_styles.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/utils.dart';
-import 'package:sukant_flutter_boilerplate/shared/widgets/appbar.dart';
-import 'package:sukant_flutter_boilerplate/shared/widgets/rounded_filled_button.dart';
-import 'package:sukant_flutter_boilerplate/shared/widgets/screen_container.dart';
-import 'package:sukant_flutter_boilerplate/shared/widgets/text_field_widget.dart';
+import 'package:janakisoft_health_fitness_app/features/auth/presentation/widgets/forgot_password_progress_indicator.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/dimens.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/strings.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/text_styles.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/utils.dart';
+import 'package:janakisoft_health_fitness_app/shared/widgets/appbar.dart';
+import 'package:janakisoft_health_fitness_app/shared/widgets/rounded_filled_button.dart';
+import 'package:janakisoft_health_fitness_app/shared/widgets/screen_container.dart';
+import 'package:janakisoft_health_fitness_app/shared/widgets/text_field_widget.dart';
 
 @RoutePage()
 class ForgotPasswordScreen extends ConsumerStatefulWidget {

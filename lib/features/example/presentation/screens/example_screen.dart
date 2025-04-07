@@ -1,7 +1,7 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sukant_flutter_boilerplate/shared/widgets/appbar.dart';
+import 'package:janakisoft_health_fitness_app/shared/widgets/appbar.dart';
 
 @RoutePage()
 class ExampleScreen extends ConsumerStatefulWidget {

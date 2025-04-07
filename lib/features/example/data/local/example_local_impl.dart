@@ -1,3 +1,3 @@
-import 'package:sukant_flutter_boilerplate/features/example/data/local/example_local.dart';
+import 'package:janakisoft_health_fitness_app/features/example/data/local/example_local.dart';
 
 class ExampleLocalImpl implements ExampleLocal {}

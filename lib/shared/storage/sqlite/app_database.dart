@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:floor/floor.dart';
 import 'package:sqflite/sqflite.dart' as sqflite;
-import 'package:sukant_flutter_boilerplate/shared/storage/sqlite/dao/example_dao.dart';
-import 'package:sukant_flutter_boilerplate/shared/storage/sqlite/db_constants.dart';
-import 'package:sukant_flutter_boilerplate/shared/storage/sqlite/entity/example_entity.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/sqlite/dao/example_dao.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/sqlite/db_constants.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/sqlite/entity/example_entity.dart';
 
 part 'app_database.g.dart';
 

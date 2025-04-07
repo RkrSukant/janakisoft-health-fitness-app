@@ -1,3 +1,3 @@
-import 'package:sukant_flutter_boilerplate/features/landing/data/landing_repository.dart';
+import 'package:janakisoft_health_fitness_app/features/landing/data/landing_repository.dart';
 
 class LandingRepositoryImpl implements LandingRepository {}

@@ -1,6 +1,6 @@
-import 'package:sukant_flutter_boilerplate/shared/exceptions/app_exception.dart';
-import 'package:sukant_flutter_boilerplate/shared/models/either.dart';
-import 'package:sukant_flutter_boilerplate/shared/models/response.dart';
+import 'package:janakisoft_health_fitness_app/shared/exceptions/app_exception.dart';
+import 'package:janakisoft_health_fitness_app/shared/models/either.dart';
+import 'package:janakisoft_health_fitness_app/shared/models/response.dart';
 
 abstract class RestNetworkService{
   String get baseUrl;

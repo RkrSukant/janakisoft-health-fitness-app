@@ -1,6 +1,6 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sukant_flutter_boilerplate/shared/storage/shared_preferences/pref_constants.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/shared_preferences/pref_constants.dart';
 
 class SharedPreferencesService {
   static SharedPreferencesService? _instance;

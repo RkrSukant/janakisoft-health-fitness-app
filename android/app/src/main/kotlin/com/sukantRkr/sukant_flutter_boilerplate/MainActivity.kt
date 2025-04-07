@@ -1,4 +1,4 @@
-package com.sukantRkr.sukant_flutter_boilerplate
+package com.sukantRkr.janakisoft_health_fitness_app
 
 import io.flutter.embedding.android.FlutterActivity
 

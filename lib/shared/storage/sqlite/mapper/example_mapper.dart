@@ -1,5 +1,5 @@
-import 'package:sukant_flutter_boilerplate/features/example/data/model/example_model.dart';
-import 'package:sukant_flutter_boilerplate/shared/storage/sqlite/entity/example_entity.dart';
+import 'package:janakisoft_health_fitness_app/features/example/data/model/example_model.dart';
+import 'package:janakisoft_health_fitness_app/shared/storage/sqlite/entity/example_entity.dart';
 
 class ExampleMapper {
   static ExampleEntity mapToEntity(ExampleModel item) {

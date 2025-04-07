@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:sukant_flutter_boilerplate/shared/exceptions/app_exception.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/strings.dart';
-import 'package:sukant_flutter_boilerplate/shared/network/errors.dart';
+import 'package:janakisoft_health_fitness_app/shared/exceptions/app_exception.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/strings.dart';
+import 'package:janakisoft_health_fitness_app/shared/network/errors.dart';
 
 String parseError(dynamic e) {
   if (e is TypeError) {

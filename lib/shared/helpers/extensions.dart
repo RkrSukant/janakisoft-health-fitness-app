@@ -2,11 +2,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:sukant_flutter_boilerplate/shared/enums/toast_type.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/colors.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/dimens.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/text_styles.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/utils.dart';
+import 'package:janakisoft_health_fitness_app/shared/enums/toast_type.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/dimens.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/text_styles.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/utils.dart';
 
 extension Iterables<E> on Iterable<E> {
   Map<K, List<E>> groupBy<K>(K Function(E) keyFunction) => fold(

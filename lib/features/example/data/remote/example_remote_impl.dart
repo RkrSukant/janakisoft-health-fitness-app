@@ -1,3 +1,3 @@
-import 'package:sukant_flutter_boilerplate/features/example/data/remote/example_remote.dart';
+import 'package:janakisoft_health_fitness_app/features/example/data/remote/example_remote.dart';
 
 class ExampleRemoteImpl implements ExampleRemote {}

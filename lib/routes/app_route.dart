@@ -1,7 +1,7 @@
 
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sukant_flutter_boilerplate/routes/router_paths.dart';
+import 'package:janakisoft_health_fitness_app/routes/router_paths.dart';
 
 import 'app_route.gr.dart';
 

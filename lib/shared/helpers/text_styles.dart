@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/colors.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/dimens.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/dimens.dart';
 
 const TextStyle text1F2024s16w400 = TextStyle(
     color: AppColors.black1F2024,

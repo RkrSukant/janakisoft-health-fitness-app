@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:equatable/equatable.dart';
-import 'package:sukant_flutter_boilerplate/shared/models/either.dart';
-import 'package:sukant_flutter_boilerplate/shared/models/response.dart';
+import 'package:janakisoft_health_fitness_app/shared/models/either.dart';
+import 'package:janakisoft_health_fitness_app/shared/models/response.dart';
 
 class AppException implements IOException {
   final String message;
