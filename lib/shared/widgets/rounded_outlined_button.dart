@@ -3,36 +3,49 @@ import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/dimens.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/text_styles.dart';
 
-class RoundedOutlinedButton extends StatelessWidget {
+class RoundedOutlinedButton extends StatefulWidget {
   final String text;
+  final Color buttonColor;
+  final Color? backgroundColor;
+  final bool disable;
   final VoidCallback onPress;
 
-  const RoundedOutlinedButton(
-      {super.key, required this.text, required this.onPress});
+  const RoundedOutlinedButton({
+    super.key,
+    required this.text,
+    this.disable = false,
+    required this.onPress,
+    this.buttonColor = AppColors.primaryColor,
+    this.backgroundColor
+  });
 
+  @override
+  State<RoundedOutlinedButton> createState() => _RoundedOutlinedButtonState();
+}
+
+class _RoundedOutlinedButtonState extends State<RoundedOutlinedButton> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: Dimens.spacing_40,
       child: OutlinedButton(
-        onPressed: onPress,
         style: OutlinedButton.styleFrom(
-          side: const BorderSide(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(Dimens.spacing_12)),
+          side: BorderSide(
             width: 1.0,
-            color: AppColors.blue006FFD,
+            color: widget.buttonColor,
             style: BorderStyle.solid,
           ),
-          elevation: Dimens.spacing_0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(Dimens.spacing_12),
-          ),
+          backgroundColor: widget.backgroundColor
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(text, style: text006FFDs14w600),
-          ],
+        onPressed: widget.disable ? null : widget.onPress,
+        child: Padding(
+          padding: const EdgeInsets.all(Dimens.spacing_16),
+          child: Text(
+            widget.text,
+            style: textFFFFFFs16w600.copyWith(color: widget.buttonColor),
+          ),
         ),
       ),
     );

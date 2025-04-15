@@ -8,60 +8,90 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:auto_route/auto_route.dart' as _i6;
-import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/forgot_password/forgot_password_screen.dart'
-    as _i2;
-import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/login_screen.dart'
-    as _i3;
-import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/register_screen.dart'
-    as _i4;
-import 'package:janakisoft_health_fitness_app/features/example/presentation/screens/example_screen.dart'
+import 'package:auto_route/auto_route.dart' as _i8;
+import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/forgot_password/enter_otp_screen.dart'
     as _i1;
-import 'package:janakisoft_health_fitness_app/features/landing/presentation/screens/splash_screen.dart'
+import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/forgot_password/forgot_password_screen.dart'
+    as _i3;
+import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/login_screen.dart'
+    as _i4;
+import 'package:janakisoft_health_fitness_app/features/auth/presentation/screens/register_screen.dart'
+    as _i6;
+import 'package:janakisoft_health_fitness_app/features/example/presentation/screens/example_screen.dart'
+    as _i2;
+import 'package:janakisoft_health_fitness_app/features/landing/presentation/screens/onboarding_screen.dart'
     as _i5;
+import 'package:janakisoft_health_fitness_app/features/landing/presentation/screens/splash_screen.dart'
+    as _i7;
 
-abstract class $AppRouter extends _i6.RootStackRouter {
+abstract class $AppRouter extends _i8.RootStackRouter {
   $AppRouter({super.navigatorKey});
 
   @override
-  final Map<String, _i6.PageFactory> pagesMap = {
-    ExampleRoute.name: (routeData) {
-      return _i6.AutoRoutePage<dynamic>(
+  final Map<String, _i8.PageFactory> pagesMap = {
+    EnterOTPRoute.name: (routeData) {
+      return _i8.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i1.ExampleScreen(),
+        child: const _i1.EnterOTPScreen(),
+      );
+    },
+    ExampleRoute.name: (routeData) {
+      return _i8.AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const _i2.ExampleScreen(),
       );
     },
     ForgotPasswordRoute.name: (routeData) {
-      return _i6.AutoRoutePage<dynamic>(
+      return _i8.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i2.ForgotPasswordScreen(),
+        child: const _i3.ForgotPasswordScreen(),
       );
     },
     LoginRoute.name: (routeData) {
-      return _i6.AutoRoutePage<dynamic>(
+      return _i8.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i3.LoginScreen(),
+        child: const _i4.LoginScreen(),
+      );
+    },
+    OnboardingRoute.name: (routeData) {
+      return _i8.AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const _i5.OnboardingScreen(),
       );
     },
     RegisterRoute.name: (routeData) {
-      return _i6.AutoRoutePage<dynamic>(
+      return _i8.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i4.RegisterScreen(),
+        child: const _i6.RegisterScreen(),
       );
     },
     SplashRoute.name: (routeData) {
-      return _i6.AutoRoutePage<dynamic>(
+      return _i8.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i5.SplashScreen(),
+        child: const _i7.SplashScreen(),
       );
     },
   };
 }
 
 /// generated route for
-/// [_i1.ExampleScreen]
-class ExampleRoute extends _i6.PageRouteInfo<void> {
-  const ExampleRoute({List<_i6.PageRouteInfo>? children})
+/// [_i1.EnterOTPScreen]
+class EnterOTPRoute extends _i8.PageRouteInfo<void> {
+  const EnterOTPRoute({List<_i8.PageRouteInfo>? children})
+      : super(
+          EnterOTPRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'EnterOTPRoute';
+
+  static const _i8.PageInfo<void> page = _i8.PageInfo<void>(name);
+}
+
+/// generated route for
+/// [_i2.ExampleScreen]
+class ExampleRoute extends _i8.PageRouteInfo<void> {
+  const ExampleRoute({List<_i8.PageRouteInfo>? children})
       : super(
           ExampleRoute.name,
           initialChildren: children,
@@ -69,13 +99,13 @@ class ExampleRoute extends _i6.PageRouteInfo<void> {
 
   static const String name = 'ExampleRoute';
 
-  static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
+  static const _i8.PageInfo<void> page = _i8.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i2.ForgotPasswordScreen]
-class ForgotPasswordRoute extends _i6.PageRouteInfo<void> {
-  const ForgotPasswordRoute({List<_i6.PageRouteInfo>? children})
+/// [_i3.ForgotPasswordScreen]
+class ForgotPasswordRoute extends _i8.PageRouteInfo<void> {
+  const ForgotPasswordRoute({List<_i8.PageRouteInfo>? children})
       : super(
           ForgotPasswordRoute.name,
           initialChildren: children,
@@ -83,13 +113,13 @@ class ForgotPasswordRoute extends _i6.PageRouteInfo<void> {
 
   static const String name = 'ForgotPasswordRoute';
 
-  static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
+  static const _i8.PageInfo<void> page = _i8.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i3.LoginScreen]
-class LoginRoute extends _i6.PageRouteInfo<void> {
-  const LoginRoute({List<_i6.PageRouteInfo>? children})
+/// [_i4.LoginScreen]
+class LoginRoute extends _i8.PageRouteInfo<void> {
+  const LoginRoute({List<_i8.PageRouteInfo>? children})
       : super(
           LoginRoute.name,
           initialChildren: children,
@@ -97,13 +127,27 @@ class LoginRoute extends _i6.PageRouteInfo<void> {
 
   static const String name = 'LoginRoute';
 
-  static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
+  static const _i8.PageInfo<void> page = _i8.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i4.RegisterScreen]
-class RegisterRoute extends _i6.PageRouteInfo<void> {
-  const RegisterRoute({List<_i6.PageRouteInfo>? children})
+/// [_i5.OnboardingScreen]
+class OnboardingRoute extends _i8.PageRouteInfo<void> {
+  const OnboardingRoute({List<_i8.PageRouteInfo>? children})
+      : super(
+          OnboardingRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'OnboardingRoute';
+
+  static const _i8.PageInfo<void> page = _i8.PageInfo<void>(name);
+}
+
+/// generated route for
+/// [_i6.RegisterScreen]
+class RegisterRoute extends _i8.PageRouteInfo<void> {
+  const RegisterRoute({List<_i8.PageRouteInfo>? children})
       : super(
           RegisterRoute.name,
           initialChildren: children,
@@ -111,13 +155,13 @@ class RegisterRoute extends _i6.PageRouteInfo<void> {
 
   static const String name = 'RegisterRoute';
 
-  static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
+  static const _i8.PageInfo<void> page = _i8.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i5.SplashScreen]
-class SplashRoute extends _i6.PageRouteInfo<void> {
-  const SplashRoute({List<_i6.PageRouteInfo>? children})
+/// [_i7.SplashScreen]
+class SplashRoute extends _i8.PageRouteInfo<void> {
+  const SplashRoute({List<_i8.PageRouteInfo>? children})
       : super(
           SplashRoute.name,
           initialChildren: children,
@@ -125,5 +169,5 @@ class SplashRoute extends _i6.PageRouteInfo<void> {
 
   static const String name = 'SplashRoute';
 
-  static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
+  static const _i8.PageInfo<void> page = _i8.PageInfo<void>(name);
 }

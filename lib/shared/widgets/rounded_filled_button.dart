@@ -15,7 +15,7 @@ class RoundedFilledButtonWidget extends StatefulWidget {
     required this.text,
     this.disable = false,
     required this.onPress,
-    this.buttonColor,
+    this.buttonColor = AppColors.primaryColor,
   });
 
   @override
@@ -24,13 +24,6 @@ class RoundedFilledButtonWidget extends StatefulWidget {
 }
 
 class _RoundedFilledButtonWidgetState extends State<RoundedFilledButtonWidget> {
-  Color color = AppColors.blue006FFD;
-
-  @override
-  void initState() {
-    super.initState();
-      color = widget.buttonColor ?? AppColors.blue006FFD;
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,14 +32,14 @@ class _RoundedFilledButtonWidgetState extends State<RoundedFilledButtonWidget> {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor:
-          widget.disable ? AppColors.black8F9098 : color,
+          widget.disable ? AppColors.black8F9098 : widget.buttonColor,
           elevation: Dimens.spacing_0,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(Dimens.spacing_12)),
         ),
         onPressed: widget.disable ? null : widget.onPress,
         child: Padding(
-          padding: const EdgeInsets.all(Dimens.spacing_18),
+          padding: const EdgeInsets.all(Dimens.spacing_16),
           child: Text(
             widget.text,
             style: textFFFFFFs16w600,

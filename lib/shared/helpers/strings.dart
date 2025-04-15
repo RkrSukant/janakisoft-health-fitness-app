@@ -43,4 +43,7 @@ class Strings {
   static const String enterNewPassword = 'Enter new password';
   static const String resetPassword = 'Reset Password';
   static const String iAgreeWithTerms = 'I agree with the Terms & Conditions';
+
+  static const String continueTxt = 'Continue';
+  static const String getStarted = 'Get Started';
 }

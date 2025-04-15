@@ -22,6 +22,11 @@ class AppColors{
   static const blackC5C6CC = Color.fromRGBO(197, 198, 204, 1);
   static const greyB0BAC9 = Color.fromRGBO(176, 186, 201, 1.0);
 
+  static const primaryColor1 = Color.fromRGBO(15, 169, 88, 1.0);
+  static const primaryColor = Color.fromRGBO(255, 109, 0, 1.0);
+  static const primaryColor3 = Color.fromRGBO(66, 133, 244, 1.0);
+  static const primaryColor4 = Color.fromRGBO(0, 180, 166, 1.0);
+
   static const blue006FFDD = Color.fromRGBO(0, 6, 255, 0.8666666666666667);
   static const blue2A4ECA = Color.fromRGBO(42, 78, 202, 1.0);
   static const blue32e0e7 = Color.fromRGBO(50, 224, 231, 1.0);

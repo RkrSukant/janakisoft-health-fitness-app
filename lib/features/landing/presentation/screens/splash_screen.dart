@@ -3,6 +3,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:janakisoft_health_fitness_app/di/service_locator.dart';
+import 'package:janakisoft_health_fitness_app/routes/app_route.gr.dart';
 import 'package:janakisoft_health_fitness_app/routes/route_util.dart';
 import 'package:janakisoft_health_fitness_app/routes/router_paths.dart';
 import 'package:janakisoft_health_fitness_app/shared/enums/toast_type.dart';
@@ -11,7 +12,6 @@ import 'package:janakisoft_health_fitness_app/shared/helpers/extensions.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/strings.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/utils.dart';
 import 'package:janakisoft_health_fitness_app/shared/storage/shared_preferences/shared_preferences_service.dart';
-import 'package:lottie/lottie.dart';
 
 @RoutePage()
 class SplashScreen extends ConsumerStatefulWidget {
@@ -55,11 +55,14 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
                     ),
                     addVerticalSpace(Dimens.spacing_16),
                     const Text(Strings.appName),
-                    const Expanded(child: SizedBox(),),
+                    const Expanded(
+                      child: SizedBox(),
+                    ),
                   ],
                 ),
               ),
-              Align(alignment: Alignment.bottomCenter,child: Text(Strings.appBy))
+              const Align(
+                  alignment: Alignment.bottomCenter, child: Text(Strings.appBy))
             ],
           ),
         ),
@@ -69,7 +72,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
 
   void initTimer() async {
     if (await checkInternetConnection()) {
-      await Future.delayed(const Duration(seconds: 500));
+      await Future.delayed(const Duration(seconds: 3));
       navigate();
     } else {
       if (!mounted) return;
@@ -80,7 +83,13 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
   }
 
   Future<void> navigate() async {
-    context.replaceRouteTo(Paths.loginScreen);
+    bool? isFirstRun = sharedPrefManager.getIsFirstTime();
+    if (isFirstRun == null || isFirstRun == true) {
+      sharedPrefManager.setIsFirstTime(false);
+      context.replaceRoute(const OnboardingRoute());
+    } else {
+      context.replaceRoute(const LoginRoute());
+    }
   }
 
   Future<bool> checkInternetConnection() async {

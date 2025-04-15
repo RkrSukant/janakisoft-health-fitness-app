@@ -15,12 +15,11 @@ class SharedPreferencesService {
     return _instance ??= SharedPreferencesService();
   }
 
-  //Example
-  Future<void> setExample(String example) async {
-    await _sharedPref?.setString(PrefConstants.example, example);
+  //is first run
+  Future<void> setIsFirstTime(bool isFirstTime) async {
+    await _sharedPref?.setBool(PrefConstants.isFirstRun, isFirstTime);
   }
-
-  String? getExample() {
-    return _sharedPref?.getString(PrefConstants.example);
+  bool? getIsFirstTime() {
+    return _sharedPref?.getBool(PrefConstants.isFirstRun);
   }
 }

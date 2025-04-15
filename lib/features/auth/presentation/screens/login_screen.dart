@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:janakisoft_health_fitness_app/routes/app_route.gr.dart';
 import 'package:janakisoft_health_fitness_app/routes/route_util.dart';
-import 'package:janakisoft_health_fitness_app/routes/router_paths.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/dimens.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/image_constants.dart';

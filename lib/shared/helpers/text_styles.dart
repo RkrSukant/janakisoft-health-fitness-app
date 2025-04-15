@@ -48,6 +48,11 @@ const TextStyle text1F2024s14w400 = TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: Dimens.textSize_14);
 
+const TextStyle textFF962Es32w700 = TextStyle(
+    color: AppColors.orangeFF962E,
+    fontWeight: FontWeight.w700,
+    fontSize: Dimens.textSize_32);
+
 const TextStyle text1F2024s24w400 = TextStyle(
     color: AppColors.black1F2024,
     fontWeight: FontWeight.w400,

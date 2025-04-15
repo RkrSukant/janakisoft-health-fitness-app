@@ -10,14 +10,13 @@ class OtpFieldWidget extends StatelessWidget {
   final Function validator;
   final Function onComplete;
 
-  const OtpFieldWidget(
-      {Key? key,
-        required this.length,
-        required this.validator,
-        required this.onComplete,
-        this.fillWithWhite=true,
-      })
-      : super(key: key);
+  const OtpFieldWidget({
+    super.key,
+    required this.length,
+    required this.validator,
+    required this.onComplete,
+    this.fillWithWhite = true,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -27,54 +26,46 @@ class OtpFieldWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       pinContentAlignment: Alignment.center,
-      validator: (input)=>validator(input),
+      validator: (input) => validator(input),
       keyboardType: TextInputType.number,
-      onCompleted: (input)=>onComplete(input),
+      onCompleted: (input) => onComplete(input),
       defaultPinTheme: PinTheme(
           height: Dimens.spacing_48,
           width: Dimens.spacing_48,
           textStyle: text1F2024s24w400,
           decoration: BoxDecoration(
-            color: (fillWithWhite)
-                ? AppColors.whiteFFFFFF
-                : AppColors.blue32e0e7,
+            color:
+                (fillWithWhite) ? AppColors.whiteFFFFFF : AppColors.blue32e0e7,
             shape: BoxShape.rectangle,
-            borderRadius:BorderRadius.circular(Dimens.spacing_12),
-            border: Border.all(
-                color: AppColors.greyB0BAC9
-            ),
-          )
-      ),
+            borderRadius: BorderRadius.circular(Dimens.spacing_12),
+            border: Border.all(color: AppColors.greyB0BAC9),
+          )),
       focusedPinTheme: PinTheme(
           height: Dimens.spacing_48,
           width: Dimens.spacing_48,
           textStyle: text1F2024s24w400,
           decoration: BoxDecoration(
-            color: (fillWithWhite)
-                ? AppColors.whiteFFFFFF
-                : AppColors.blue32e0e7,
+            color:
+                (fillWithWhite) ? AppColors.whiteFFFFFF : AppColors.blue32e0e7,
             shape: BoxShape.rectangle,
-            borderRadius:BorderRadius.circular(Dimens.spacing_12),
+            borderRadius: BorderRadius.circular(Dimens.spacing_12),
             border: Border.all(
               color: AppColors.blue006FFDD,
             ),
-          )
-      ),
+          )),
       errorPinTheme: PinTheme(
           height: Dimens.spacing_48,
           width: Dimens.spacing_48,
           textStyle: text1F2024s24w400,
           decoration: BoxDecoration(
-            color: (fillWithWhite)
-                ? AppColors.whiteFFFFFF
-                : AppColors.blue32e0e7,
+            color:
+                (fillWithWhite) ? AppColors.whiteFFFFFF : AppColors.blue32e0e7,
             shape: BoxShape.rectangle,
-            borderRadius:BorderRadius.circular(Dimens.spacing_12),
+            borderRadius: BorderRadius.circular(Dimens.spacing_12),
             border: Border.all(
               color: AppColors.redED3241,
             ),
-          )
-      ),
+          )),
     );
   }
 }

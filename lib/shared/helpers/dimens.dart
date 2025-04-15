@@ -1,11 +1,14 @@
 class Dimens {
   static const double spacing_216 = 216.0;
+  static const double spacing_200 = 200.0;
+  static const double spacing_180 = 180.0;
   static const double spacing_120 = 120.0;
   static const double spacing_48 = 48.0;
   static const double spacing_40 = 40.0;
   static const double spacing_36 = 36.0;
   static const double spacing_32 = 32.0;
   static const double spacing_24 = 24.0;
+  static const double spacing_20 = 20.0;
   static const double spacing_18 = 18.0;
   static const double spacing_16 = 16.0;
   static const double spacing_14 = 14.0;
