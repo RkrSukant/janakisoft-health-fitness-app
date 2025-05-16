@@ -36,7 +36,7 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
           children: [
             const Text(
               Strings.forgotPassword,
-              style: text2A4ECAs32w700,
+              style: textFF6D00s32w700,
             ),
             addVerticalSpace(Dimens.spacing_16),
             const Padding(

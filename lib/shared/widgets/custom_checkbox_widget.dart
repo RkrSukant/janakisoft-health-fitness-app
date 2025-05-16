@@ -22,7 +22,7 @@ class CustomCheckbox extends StatefulWidget {
 
 class _CustomCheckboxState extends State<CustomCheckbox> {
   late bool isSelected;
-  Color color = AppColors.blue006FFD;
+  Color color = AppColors.primaryColor;
 
   @override
   void initState() {
@@ -47,7 +47,7 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
             decoration: BoxDecoration(
               color: widget.isSelected ? color : Colors.transparent,
               border: Border.all(
-                color: widget.isSelected ? color : Colors.grey,
+                color: widget.isSelected ? color : AppColors.primaryColor,
               ),
               borderRadius:
                   BorderRadius.circular(4.0), // Adjust for rounded corners

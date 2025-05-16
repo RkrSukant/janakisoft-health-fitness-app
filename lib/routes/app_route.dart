@@ -1,6 +1,7 @@
 
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:janakisoft_health_fitness_app/features/skin_care/screens/skin_care_main_screen.dart';
 import 'package:janakisoft_health_fitness_app/routes/router_paths.dart';
 
 import 'app_route.gr.dart';
@@ -22,10 +23,6 @@ class AppRouter extends $AppRouter{
       page: SplashRoute.page,
     ),
     AutoRoute(
-      path: Paths.exampleScreen,
-      page: ExampleRoute.page,
-    ),
-    AutoRoute(
       path: Paths.loginScreen,
       page: LoginRoute.page,
     ),
@@ -40,6 +37,18 @@ class AppRouter extends $AppRouter{
     AutoRoute(
       path: Paths.onBoarding,
       page: OnboardingRoute.page,
+    ),
+    AutoRoute(
+      path: Paths.dashboard,
+      page: DashboardRoute.page,
+    ),
+    AutoRoute(
+      path: Paths.cardioMain,
+      page: CardioMainRoute.page,
+    ),
+    AutoRoute(
+      path: Paths.skinCareMain,
+      page: SkinCareMainRoute.page,
     ),
   ];
 }

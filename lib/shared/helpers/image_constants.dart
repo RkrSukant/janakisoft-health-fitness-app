@@ -9,4 +9,9 @@ class ImageConstants{
   static const onboardingOne = "assets/drawable/onboarding_one.png";
   static const onboardingTwo =  "assets/drawable/onboarding_two.png";
   static const onboardingThree = "assets/drawable/onboarding_three.png";
+
+  static const icHeartNormal = "assets/drawable/ic_heart_normal.png";
+  static const icHeartHappy = "assets/drawable/ic_heart_happy.png";
+  static const icHeartMeditate = "assets/drawable/ic_heart_meditate.png";
+  static const icHeartSad = "assets/drawable/ic_heart_sad.png";
 }

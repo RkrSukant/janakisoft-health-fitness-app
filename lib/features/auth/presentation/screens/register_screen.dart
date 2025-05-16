@@ -62,7 +62,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
       children: [
         const Text(
           Strings.signUp,
-          style: text2A4ECAs32w700,
+          style: textFF6D00s32w700,
         ),
         addVerticalSpace(Dimens.spacing_16),
         const Text(
@@ -83,12 +83,20 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
           obscureText: true,
         ),
         addVerticalSpace(Dimens.spacing_12),
-        const Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            CustomCheckbox(isSelected: true),
-            Text(Strings.iAgreeWithTerms)
-          ],
+        GestureDetector(
+          onTap: () {
+            hasAgreed = !hasAgreed;
+            setState(() {
+
+            });
+          },
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              CustomCheckbox(isSelected: hasAgreed, ),
+              const Text(Strings.iAgreeWithTerms)
+            ],
+          ),
         ),
         addVerticalSpace(Dimens.spacing_24),
         RoundedFilledButtonWidget(text: Strings.createAccount, onPress: () {}),
@@ -109,7 +117,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                 padding: EdgeInsets.all(Dimens.spacing_4),
                 child: Text(
                   Strings.signIn,
-                  style: text006FFDs14w600,
+                  style: textFF6D00s14w600,
                 ),
               ),
             ),
@@ -161,4 +169,6 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
       ),
     );
   }
+
+
 }

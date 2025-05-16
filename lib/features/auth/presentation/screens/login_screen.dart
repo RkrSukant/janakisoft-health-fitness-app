@@ -1,11 +1,12 @@
-import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:janakisoft_health_fitness_app/routes/app_route.gr.dart';
 import 'package:janakisoft_health_fitness_app/routes/route_util.dart';
+import 'package:janakisoft_health_fitness_app/shared/enums/toast_type.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/colors.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/dimens.dart';
+import 'package:janakisoft_health_fitness_app/shared/helpers/extensions.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/image_constants.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/strings.dart';
 import 'package:janakisoft_health_fitness_app/shared/helpers/text_styles.dart';
@@ -59,7 +60,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
       children: [
         const Text(
           Strings.signIn,
-          style: text2A4ECAs32w700,
+          style: textFF6D00s32w700,
         ),
         addVerticalSpace(Dimens.spacing_16),
         const Text(
@@ -93,7 +94,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
           ],
         ),
         addVerticalSpace(Dimens.spacing_32),
-        RoundedFilledButtonWidget(text: Strings.login, onPress: () {}),
+        RoundedFilledButtonWidget(
+            text: Strings.login,
+            onPress: () {
+              if (_isValid()) {
+                context.pushRoute(const DashboardRoute());
+              }
+            }),
         addVerticalSpace(Dimens.spacing_12),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -111,7 +118,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 padding: EdgeInsets.all(Dimens.spacing_4),
                 child: Text(
                   Strings.register,
-                  style: text006FFDs14w600,
+                  style: textFF6D00s14w600,
                 ),
               ),
             ),
@@ -134,7 +141,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ssoLoginWidget(ImageConstants.icGoogle, () {}),
+            ssoLoginWidget(ImageConstants.icGoogle, () {
+              context.pushRoute(const DashboardRoute());
+            }),
             addHorizontalSpace(Dimens.spacing_16),
             ssoLoginWidget(ImageConstants.icFacebook, () {}),
             addHorizontalSpace(Dimens.spacing_16),
@@ -143,6 +152,24 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         )
       ],
     );
+  }
+
+  bool _isValid() {
+    if (_emailController.text.isEmpty) {
+      context.showToast(Strings.enterEmail, ToastType.error);
+      return false;
+    }
+    if (RegExp(
+            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+        .hasMatch(_emailController.text)) {
+      context.showToast(Strings.invalidEmail, ToastType.error);
+      return false;
+    }
+    if (_passwordController.text.isEmpty) {
+      context.showToast(Strings.enterEmail, ToastType.error);
+      return false;
+    }
+    return true;
   }
 
   Widget ssoLoginWidget(String image, Function() callback) {

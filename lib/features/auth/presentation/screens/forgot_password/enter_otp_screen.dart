@@ -36,7 +36,7 @@ class _EnterOTPScreenState extends ConsumerState<EnterOTPScreen> {
           children: [
             const Text(
               Strings.enterOTP,
-              style: text2A4ECAs32w700,
+              style: textFF6D00s32w700,
             ),
             addVerticalSpace(Dimens.spacing_16),
             const Padding(

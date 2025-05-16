@@ -11,7 +11,8 @@ class Strings {
   static const String login = 'Log In';
   static const String register = 'Register';
   static const String createAccount = 'Create account';
-  static const String registerMsg = 'Sign up to get started and unlock all the features of the app!';
+  static const String registerMsg =
+      'Sign up to get started and unlock all the features of the app!';
   static const String loginMsg = 'Login to continue using the app';
   static const String name = 'Name';
   static const String email = 'Email';
@@ -43,7 +44,24 @@ class Strings {
   static const String enterNewPassword = 'Enter new password';
   static const String resetPassword = 'Reset Password';
   static const String iAgreeWithTerms = 'I agree with the Terms & Conditions';
+  static const String enterValidEmail = 'Please enter a valid email';
+  static const String passwordRequired = 'Password is required';
+  static const String invalidCredentials = 'Invalid Credentials';
+  static const String invalidEmail = 'Invalid Email';
 
   static const String continueTxt = 'Continue';
   static const String getStarted = 'Get Started';
+
+  static const String record = 'Record';
+
+  //Cardiac Section
+  static const String cardiovascularHealth = 'Cardio Health';
+  static const String mmHg = 'mm/Hg';
+  static const String bloodPressureInHealthyRange = 'Your Blood Pressure is in healthy range';
+  static const String bloodPressureInHealthyRange15Days =
+      'Your blood pressure has stayed within the healthy range for the past 15 days.';
+  static const String readMore = 'Read More';
+
+  //Skin Care
+  static const String skinCare = 'Skin Care';
 }
