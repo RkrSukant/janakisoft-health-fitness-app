@@ -84,7 +84,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
     bool? isFirstRun = sharedPrefManager.getIsFirstTime();
     if (isFirstRun == null || isFirstRun == true) {
       sharedPrefManager.setIsFirstTime(false);
-      context.replaceRoute(const OnboardingRoute());
+      context.replaceRoute(const LandingRoute());
     } else {
       context.replaceRoute(const LoginRoute());
     }

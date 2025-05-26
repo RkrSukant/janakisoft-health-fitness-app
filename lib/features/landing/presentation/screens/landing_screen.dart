@@ -10,14 +10,14 @@ import 'package:janakisoft_health_fitness_app/shared/helpers/utils.dart';
 import 'package:janakisoft_health_fitness_app/shared/widgets/rounded_outlined_button.dart';
 
 @RoutePage()
-class OnboardingScreen extends StatefulWidget {
-  const OnboardingScreen({super.key});
+class LandingScreen extends StatefulWidget {
+  const LandingScreen({super.key});
 
   @override
-  State<OnboardingScreen> createState() => _OnboardingScreenState();
+  State<LandingScreen> createState() => _LandingScreenState();
 }
 
-class _OnboardingScreenState extends State<OnboardingScreen> {
+class _LandingScreenState extends State<LandingScreen> {
   final List<Map<String, dynamic>> _pages = [
     {
       'title': 'Stay on Top of Your Health',

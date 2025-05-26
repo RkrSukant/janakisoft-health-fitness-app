@@ -35,6 +35,10 @@ class AppRouter extends $AppRouter{
       page: ForgotPasswordRoute.page,
     ),
     AutoRoute(
+      path: Paths.landing,
+      page: LandingRoute.page,
+    ),
+    AutoRoute(
       path: Paths.onBoarding,
       page: OnboardingRoute.page,
     ),

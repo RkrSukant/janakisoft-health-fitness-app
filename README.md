@@ -1,5 +1,5 @@
-# Sukant's Boilerplate for a new flutter application.
-A boilerplate for a new flutter project. With implementation for all necessary for a basic project.
+# Health and Fitness applciation for Janaki Soft
+Health and Fitness Appliccation for Janaki Soft
 
 ## Dependencies:
 - dio

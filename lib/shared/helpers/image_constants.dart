@@ -14,4 +14,6 @@ class ImageConstants{
   static const icHeartHappy = "assets/drawable/ic_heart_happy.png";
   static const icHeartMeditate = "assets/drawable/ic_heart_meditate.png";
   static const icHeartSad = "assets/drawable/ic_heart_sad.png";
+
+  static const icGenderTest = "assets/drawable/ic_gender_test.png";
 }

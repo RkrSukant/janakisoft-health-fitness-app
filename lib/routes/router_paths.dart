@@ -7,6 +7,7 @@ class Paths{
   static const String loginScreen = "/login";
   static const String registerScreen = "/register";
   static const String forgotPasswordScreen = "/forgotPassword";
+  static const String landing = "/landing";
   static const String onBoarding = "/onBoarding";
   static const String dashboard = "/dashboard";
   static const String cardioDashboard = "/cardioDashboard";

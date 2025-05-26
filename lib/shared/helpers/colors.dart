@@ -49,6 +49,8 @@ class AppColors{
   static const green00C896 = Color.fromRGBO(0, 200, 150, 1.0);
   static const green4CE5B1 = Color.fromRGBO(76, 229, 177, 1.0);
   static const blue4DA6FF = Color.fromRGBO(77, 166, 255, 1.0);
+  static const orangeFF6D00 = Color.fromRGBO(255, 109, 0, 1.0);
+  static const orangeFD7613 = Color.fromRGBO(253, 118, 19, 1.0);
 
 
 
