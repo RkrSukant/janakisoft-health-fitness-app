@@ -51,6 +51,18 @@ class AppRouter extends $AppRouter{
       page: CardioMainRoute.page,
     ),
     AutoRoute(
+      path: Paths.skinCareSurvey,
+      page: SkinCareSurveyRoute.page,
+    ),
+    AutoRoute(
+      path: Paths.skinCareMain,
+      page: SkinCareMainRoute.page,
+    ),
+    AutoRoute(
+      path: Paths.skinCareMain,
+      page: SkinCareMainRoute.page,
+    ),
+    AutoRoute(
       path: Paths.skinCareMain,
       page: SkinCareMainRoute.page,
     ),

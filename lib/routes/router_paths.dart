@@ -10,7 +10,14 @@ class Paths{
   static const String landing = "/landing";
   static const String onBoarding = "/onBoarding";
   static const String dashboard = "/dashboard";
+
   static const String cardioDashboard = "/cardioDashboard";
   static const String cardioMain = "/cardioMain";
+
   static const String skinCareMain = "/skinMain";
+  static const String skinCareSurvey = "/skinSurvey";
+
+  static const String exerciseHomeScreen = "/exerciseHome";
+  static const String exerciseDetailScreen = "/exerciseDetail";
+  static const String exerciseWorkoutDetailScreen = "/exerciseWorkoutdDetail";
 }

@@ -122,20 +122,38 @@ class _OnboardingWeightWidgetState extends State<OnboardingWeightWidget> {
                     minHeight: Dimens.spacing_48,
                     minWidth: 120,
                   ),
-                  children: const [
+                  children: [
                     Padding(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: Dimens.spacing_16,
                         vertical: Dimens.spacing_8,
                       ),
-                      child: Text("lbs", style: text1F2024s14w700),
+                      child: Text(
+                        "lbs",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700,
+                          color: _selectedUnit == WeightUnit.lbs
+                              ? Colors.white
+                              : AppColors.primaryColor,
+                        ),
+                      ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: Dimens.spacing_16,
                         vertical: Dimens.spacing_8,
                       ),
-                      child: Text("kg", style: text1F2024s14w700),
+                      child: Text(
+                        "kg",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700,
+                          color: _selectedUnit == WeightUnit.kg
+                              ? Colors.white
+                              : AppColors.primaryColor,
+                        ),
+                      ),
                     ),
                   ],
                 ),

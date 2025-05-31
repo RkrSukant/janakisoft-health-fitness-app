@@ -23,7 +23,7 @@ class _SkinCareDashboardComponentWidgetState
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        context.pushRoute(const SkinCareMainRoute());
+        context.pushRoute(const SkinCareSurveyRoute());
       },
       child: DashboardCommonCardWidget(
         backgroundColor: AppColors.purple9C27B0,

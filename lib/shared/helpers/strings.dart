@@ -50,6 +50,7 @@ class Strings {
   static const String invalidEmail = 'Invalid Email';
 
   static const String continueTxt = 'Continue';
+  static const String finish = 'Finish';
   static const String getStarted = 'Get Started';
 
   static const String record = 'Record';
@@ -64,4 +65,5 @@ class Strings {
 
   //Skin Care
   static const String skinCare = 'Skin Care';
+  static const String learnMore = 'Learn More';
 }

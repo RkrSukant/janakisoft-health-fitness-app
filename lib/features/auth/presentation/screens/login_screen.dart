@@ -149,7 +149,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               context.pushRoute(const OnboardingRoute());
             }),
             addHorizontalSpace(Dimens.spacing_16),
-            ssoLoginWidget(ImageConstants.icApple, () {}),
+            ssoLoginWidget(ImageConstants.icApple, () {
+              context.pushRoute(LandingRoute());
+            }),
           ],
         )
       ],
