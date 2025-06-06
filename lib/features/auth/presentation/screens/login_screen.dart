@@ -142,7 +142,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ssoLoginWidget(ImageConstants.icGoogle, () {
-              context.pushRoute(const DashboardRoute());
+              context.pushRoute(const CommonHomeRoute());
             }),
             addHorizontalSpace(Dimens.spacing_16),
             ssoLoginWidget(ImageConstants.icFacebook, () {

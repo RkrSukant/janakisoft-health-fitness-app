@@ -23,6 +23,16 @@ const TextStyle text1F2024s16w600 = TextStyle(
     fontWeight: FontWeight.w600,
     fontSize: Dimens.textSize_16);
 
+const TextStyle text1F2024s18w600 = TextStyle(
+    color: AppColors.black1F2024,
+    fontWeight: FontWeight.w600,
+    fontSize: Dimens.textSize_18);
+
+const TextStyle textFFFFFFs18w600 = TextStyle(
+    color: AppColors.whiteFFFFFF,
+    fontWeight: FontWeight.w600,
+    fontSize: Dimens.textSize_18);
+
 const TextStyle text8F9098s16w600 = TextStyle(
     color: AppColors.black8F9098,
     fontWeight: FontWeight.w600,

@@ -11,6 +11,8 @@ class Paths{
   static const String onBoarding = "/onBoarding";
   static const String dashboard = "/dashboard";
 
+  static const String commonHome = "/commonHome";
+
   static const String cardioDashboard = "/cardioDashboard";
   static const String cardioMain = "/cardioMain";
 
@@ -19,5 +21,5 @@ class Paths{
 
   static const String exerciseHomeScreen = "/exerciseHome";
   static const String exerciseDetailScreen = "/exerciseDetail";
-  static const String exerciseWorkoutDetailScreen = "/exerciseWorkoutdDetail";
+  static const String exerciseWorkoutDetailScreen = "/exerciseWorkoutDetail";
 }

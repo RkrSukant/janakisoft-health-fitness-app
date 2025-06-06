@@ -47,6 +47,10 @@ class AppRouter extends $AppRouter{
       page: DashboardRoute.page,
     ),
     AutoRoute(
+      path: Paths.commonHome,
+      page: CommonHomeRoute.page,
+    ),
+    AutoRoute(
       path: Paths.cardioMain,
       page: CardioMainRoute.page,
     ),
@@ -65,6 +69,10 @@ class AppRouter extends $AppRouter{
     AutoRoute(
       path: Paths.skinCareMain,
       page: SkinCareMainRoute.page,
+    ),
+    AutoRoute(
+      path: Paths.exerciseWorkoutDetailScreen,
+      page: ExerciseWorkoutDetailRoute.page,
     ),
   ];
 }
